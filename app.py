@@ -14,6 +14,11 @@ initialize_app(cred)
 
 playlists_db = {}
 songs_db = {}
+@app.route('/')
+def landing_page():
+    return {
+        "Movies from these three GENRES" : "1:Superheros,2:Wild-West,3:Monsterverse,4:Supernatral,5:Paranormal,5:Romcom,6:Holidays"
+    }
 
 @app.route('/api/search', methods=['GET'])
 def search():
