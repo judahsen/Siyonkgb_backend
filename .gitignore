@@ -1,0 +1,5 @@
+skgbvenv
+.env
+secret
+secrets
+__pycache__
